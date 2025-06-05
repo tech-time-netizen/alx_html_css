@@ -189,12 +189,18 @@ h6 {
 
 @media (max-width: 800px) {
   body.works_on_smartphone {
-  	display: block;
+    display: block;
+    padding: 10px; /* Add padding for better spacing */
   }
   body.works_on_smartphone main {
-  	display: block;
+    display: block;
+    margin: 0 auto; /* Center the content */
   }
   header .right {
-  	float: none;
+    float: none;
+    text-align: center; /* Center align header content */
+  }
+  header ul {
+    padding: 10px; /* Add padding for better spacing */
   }
 }
