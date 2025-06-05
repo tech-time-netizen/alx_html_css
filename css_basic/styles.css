@@ -14,9 +14,26 @@ main{
 article{
     flex: 2;
     overflow-y: auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-right: 10px solid #333;
 }
 
 aside{
     flex: 1;
     overflow-y: auto;
+    
+}
+
+.logo{
+    font-size: 76px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+}
+
+ul{
+    display: flex;
+    align-items: center;
+    justify-content: start;
 }

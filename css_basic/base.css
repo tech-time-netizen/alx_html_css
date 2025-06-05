@@ -63,6 +63,10 @@ h1, h2, h3, h4, h5, h6, header {
 	font-family: 'Yeseva One', sans-serif;
 }
 article {
+    background: #FFFFFF;
+    color: rgba(0, 0, 0, 0.8);
+    border-right: 1px solid rgb(221,221,221);
+    transition: border-right-color 1s ease;
 }
 header {
 	border-bottom: 1px solid rgb(221,221,221);
