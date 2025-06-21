@@ -1,0 +1,435 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html,
+  body {
+    font-size: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+    overflow-x: hidden;
+  }
+  
+  :root {
+    --primary-btn-color: #e66465;
+    --hover-btn-color: #FF6565;
+    --max-width: 1000px;
+    --line-height: 26px;
+  }
+  
+  .container {
+    background: radial-gradient(ellipse at center, #d8d8d8 0%, #071629 100%);
+    min-height: 800px;
+    background-image: url(./images/background.png);
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    position: relative;
+  }
+  
+  .logo img {
+    width: 161px;
+  }
+  
+  .nav-links {
+    display: flex;
+    gap: 40px;
+    list-style: none;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #f9f9f9;
+  }
+  
+  .nav-links a:hover {
+    color: var(--hover-btn-color);
+  }
+  
+  .menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  .menu img {
+    width: 32px;
+    height: auto;
+  }
+  
+  /* Hero Section */
+  .hero {
+    margin-top: 120px;
+    text-align: center;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hero h1 {
+    font-size: 3.2rem;
+    font-weight: bold;
+  }
+  
+  .hero .text {
+    font-size: 1.6rem;
+    font-weight: 700;
+    width: 279px;
+  }
+  
+  .hero-text {
+    width: 335px;
+    font-weight: 400;
+  }
+  
+  .hero .cta {
+    width: 162px;
+    padding: 13px 31px;
+    border-radius: 22px;
+    background-color: var(--hover-btn-color);
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 40px;
+    border: none;
+    box-shadow: 0 4px 4px #0000;
+    cursor: pointer;
+  }
+  
+  .hero .cta:hover {
+    opacity: 0.9;
+  }
+  
+  .hero-text {
+    margin-top: 30px;
+    width: 90%;
+    max-width: 637px;
+    font-size: 1.6rem;
+    font-weight: 300;
+    line-height: var(--line-height);
+  }
+  
+  .main-content {
+    text-align: center;
+    width: 637px;
+    margin: 0 auto;
+    font-size: 16px;
+    margin-top: 190px;
+    line-height: var(--line-height);
+    font-weight: 400;
+  }
+  
+  .icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 97px auto;
+    gap: 8px;
+  }
+  
+  .icon-items {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .icon-items p {
+    text-align: center;
+    margin-bottom: 110px;
+    line-height: var(--line-height);
+    font-size: 14px;
+    font-weight: 400;
+    width: 207px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .services{
+    background: url(./images/headphones_hero_2.jpg);
+    background-size:cover ;
+    height: auto;
+    margin-top: 190px;
+    
+
+  }
+  .services h1{
+    text-align: center;
+    width: 637px;
+    font-size: 16px;
+    margin: 0 auto;
+    line-height: var(--line-height);
+    font-weight: 400;
+    color: #ffffff;
+    padding-top: 100px;
+    
+  }
+
+  .polygons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 58px;
+    margin-top: 76px;
+  }
+  .polygon-items {
+    position: relative;
+    width: 190px;   
+    height: 190px; 
+}
+.polygon-items img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.polygon-items h2 {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 46px;
+    color: #fff;
+    text-align: center;
+}
+
+.polygon-items p {
+    position: absolute;
+    top: 54%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: var(--line-height);
+    color: #ffffff;
+    margin: 0;
+    width: 80%;
+    text-align: center;
+}
+
+
+ /* Media query for tablets */
+@media (max-width: 768px) {
+    .icons {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 32px 0;
+      margin: 140px 0 0 0;
+      width: 100%;
+    }
+  
+    .icon-items {
+      width: 50%;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+  
+    .icons p {
+      width: 207px;
+      font-size: 14px;
+    }
+  
+    .polygons {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 32px 0;
+        margin-top: 40px;
+        width: 100%;
+      }
+  
+    .polygon-items {
+        width: 50%;       
+    height: auto;
+    aspect-ratio: 1/1;  
+    margin-bottom: 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      }
+    .polygons img{
+    width: 180px;
+    height: 180px;
+    display: block;
+    }
+    .polygon-items h2 {
+        position: absolute;
+        top: 36%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 46px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .polygon-items p {
+        position: absolute;
+        top: 54%; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: var(--line-height);
+        color: #ffffff;
+        margin: 0;
+        width: 80%;
+        text-align: center;
+    }
+  }
+  
+  /* For mobile */
+  @media (max-width: 480px) {
+    .menu {
+      display: block;
+    }
+  
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      padding: 20px;
+      gap: 20px;
+      text-align: center;
+    }
+  
+    #menu-toggle:checked ~ .nav-links {
+      display: flex;
+    }
+  
+    .logo {
+      margin: 0 auto;
+    }
+  
+    .header {
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .hero {
+      margin-top: 80px;
+    }
+  
+    .icons {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 32px;
+      margin: 110px 0 0 0;
+      width: 100%;
+    }
+  
+    .icon-items {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 16px;
+      width: 100%;
+    }
+  
+    .icon-items img {
+      width: 64px;
+      height: auto;
+    }
+  
+    .icon-items p {
+      text-align: center;
+      margin-bottom: 0;
+      width: 90%;
+      max-width: 250px;
+      line-height: var(--line-height);
+    }
+  
+    .main-content {
+      width: 90%;
+      max-width: 335px;
+      font-size: 16px;
+      font-family: 'Source Sans Pro';
+      font-weight: 400;
+      margin: 110px auto;
+      padding-top: 40px;
+      text-align: center;
+      line-height: var(--line-height);
+    }
+  
+    /* Ensure menu toggle pushes content down */
+    #menu-toggle:checked ~ .nav-links + .hero {
+      margin-top: 250px; /* Adjust based on menu height */
+    }
+    .services h1{
+        font-size: 14px;
+        text-align: center;
+        width: 335px;
+    }
+    .polygons {
+        flex-direction: column;
+      }
+  
+    .polygon-items {
+        width: 25%;         
+    height: auto;
+    aspect-ratio: 1/1;  
+    margin-bottom: 32px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+      }
+    .polygons img{
+    width: 180px;
+    height: 180px;
+    display: block;
+    }
+    .polygon-items h2 {
+        position: absolute;
+        top: 26%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 46px;
+        color: #fff;
+        text-align: center;
+    }
+    
+    .polygon-items p {
+        position: absolute;
+        top: 54%; 
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 14px;
+        font-weight: 400;
+        line-height: var(--line-height);
+        color: #ffffff;
+        margin: 0;
+        width: 80%;
+        text-align: center;
+    }
+  }
